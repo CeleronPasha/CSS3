@@ -1,0 +1,34 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    background-color: #e2e7ec;
+}
+
+.element {
+    width: 600px;
+    height: 375px;
+    margin: 20px auto;
+    background: 
+        url(images/img3.png) no-repeat,
+        url(images/img2.png) no-repeat,
+        url(images/img1.jpg) no-repeat
+    ;
+    background-size: 300px, 150px, auto;
+    background-position: right 50px bottom 5px, left 10px bottom 135px, center;
+}
+
+.element2 {
+    width: 600px;
+    height: 375px;
+    margin: 20px auto;
+    background:
+        #fff
+        url(images/img3.png);
+    background-size: 250px;
+    background-repeat: space;
+}
