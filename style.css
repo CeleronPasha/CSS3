@@ -32,3 +32,41 @@ body {
     background-size: 250px;
     background-repeat: space;
 }
+
+.border {
+    width: 300px;
+    height: 200px;
+    margin: 20px auto;
+    background-color: silver;
+    border: 10px solid #000;
+    border-radius: 50px;
+}
+
+.border-img {
+    width: 300px;
+    height: 200px;
+    background: url(images/2109.jpg) no-repeat;
+    /*background-clip: padding-box;*/
+    background-origin: border-box;
+    margin: 20px auto;
+    background-size: cover;
+    border: 20px solid #000;
+    border-image-source: url(images/border.png);
+    border-image-slice: 27;
+    border-image-repeat: round;
+    border-image-outset: 18.5px;
+}
+
+.border-img2 {
+    width: 300px;
+    height: 200px;
+    background: url(images/2109.jpg) no-repeat;
+    /*background-clip: padding-box;*/
+    background-origin: border-box;
+    margin: 40px auto;
+    background-size: cover;
+    border: 40px solid #000;
+    border-image-source: url(images/border2.png);
+    border-image-slice: 40;
+    border-image-repeat: round;
+}
