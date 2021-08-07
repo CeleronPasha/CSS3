@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,700&display=swap');
+
 *{
     padding: 0;
     margin: 0;
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     font-size: 16px;
     background-color: #e2e7ec;
 }
@@ -184,4 +186,86 @@ h1 {
     margin: 30px auto;
     background-color: black;
     background-image: radial-gradient(at 10% 80%, red,blue);
+}
+
+.block {
+    margin: 25px;
+    columns: 5 150px;
+    column-gap: 20px;
+    column-rule:2px solid #0f0;
+}
+
+.section {
+    width: 95% ;
+    margin: 25px auto;
+    display: flex;
+}
+
+.lefr, .right {
+    box-sizing: border-box;
+}
+
+.left {
+    background-color: red;
+    padding: 20px;
+    margin-right: 30px;
+    flex-basis: calc(100% - 300px - 30px);
+    border: 10px solid #000;
+}
+
+.right {
+    background-color: #0f0;
+    padding: 20px ;
+    flex-basis: 300px;
+    flex-shrink: 0;
+}
+
+.font {
+    margin: 20px;
+}
+
+.font p {
+    font-family: bodoni;
+    font-weight: 700;
+}
+
+.article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.filter {
+    width: 45%;
+    margin: 20px 0;
+    border: 5px solid #000;
+    box-sizing: border-box;
+    max-width: 400px;
+}
+
+.filter img{
+    max-width: 100%;
+    display: block;
+}
+
+.filter1 img {
+    filter: brightness(2);
+}
+
+.filter2 img {
+    filter: contrast(150%);
+}
+
+.filter3 img {
+    filter: grayscale(90%);
+}
+
+.filter4 img {
+    filter: sepia(90%);
+}
+
+.filter5 img {
+    filter: drop-shadow(5px 5px 15px #0fe);
 }
